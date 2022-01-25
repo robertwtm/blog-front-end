@@ -10,9 +10,9 @@ ul.social-network{
   }
   
   .fa{
-    font-size: 35pt;
+    font-size: 10pt;
     color: white;
-    padding: 10px;
+    padding: 5px;
   }
   .fa-facebook-square:hover{
     color: #3b5998;
