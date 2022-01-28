@@ -10,6 +10,7 @@ import { TemaService } from '../service/tema.service';
   styleUrls: ['./tema.component.css']
 })
 export class TemaComponent implements OnInit {
+
   tema: Tema = new Tema()
   listaTemas: Tema[]
 
@@ -19,12 +20,11 @@ export class TemaComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-
-    this.findAllTemas()
-
     if(environment.token == ''){
       this.router.navigate(['/entrar'])
     }
+
+    this.findAllTemas()
   }
 
   findAllTemas(){
